@@ -18,14 +18,14 @@ class QuoteContent extends StatelessWidget {
       child: Column(
         children: [
           const Text(
-            'hdsjafdj sd[fgjs[fsjd s]g] ]g sg]djg]j gs]g]sdagsjg js]gaj]sgj]ajg] ',
+            'لو المصلحه هى اللى هتجمعنا ❌ يحرم عليا اجتمعنا❌🔞✋ ',
             textAlign: TextAlign.center,
             style: AppStyle.s22,
           ),
           Container(
             margin: const EdgeInsets.symmetric(vertical: 20),
             child: const Text(
-              'Ahmed Slman',
+              'أبو ملك (الطير العاشق)',
               style: AppStyle.s22,
             ),
           ),

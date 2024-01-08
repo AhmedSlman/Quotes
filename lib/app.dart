@@ -12,7 +12,7 @@ class QuoteApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Quotes App',
       theme: appThemes(),
       home: const QuoteView(),
       onGenerateRoute: AppRoutes.onGenerateRoute,

@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quotes/core/utils/app_colors.dart';
 
 class AppConstants {
   static void showErrorDialog(
@@ -19,12 +18,13 @@ class AppConstants {
           TextButton(
             onPressed: () => Navigator.pop(context),
             style: TextButton.styleFrom(
-                primary: Colors.black,
-                textStyle: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                )),
+              foregroundColor: Colors.black,
+              textStyle: const TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
             child: const Text('OK'),
           ),
         ],
