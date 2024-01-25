@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:quotes/features/random_quote/data/models/qoute_model.dart';
 
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_style.dart';
 
 class QuoteContent extends StatelessWidget {
-  const QuoteContent({super.key});
+  QuoteContent({
+    super.key,
+  });
+  QuoteModel? quote;
 
   @override
   Widget build(BuildContext context) {
@@ -17,15 +21,15 @@ class QuoteContent extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const Text(
-            'لو المصلحه هى اللى هتجمعنا ❌ يحرم عليا اجتمعنا❌🔞✋ ',
+          Text(
+            quote?.content ?? '',
             textAlign: TextAlign.center,
             style: AppStyle.s22,
           ),
           Container(
             margin: const EdgeInsets.symmetric(vertical: 20),
-            child: const Text(
-              'أبو ملك (الطير العاشق)',
+            child: Text(
+              quote?.author ?? '',
               style: AppStyle.s22,
             ),
           ),
